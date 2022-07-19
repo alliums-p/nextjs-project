@@ -1,14 +1,9 @@
 import { server } from "../config/index"
-import Head from "next/head"
 import ArticleList from "../components/ArticleList"
 
 export default function Home({ articles }) {
     return (
         <div>
-            <Head>
-                <title>Homepage | Nuxtjs</title>
-            </Head>
-
             <ArticleList articles={articles} />
         </div>
     )
